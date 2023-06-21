@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--required meta-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--title for this document-->
+    <title>Trade &mdash; Invest &amp; Pool</title>
+    <!--favicon for this document-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!--keywords for this  document-->
+    <meta name="keywords" content="Trade, Invest, Pool HTML Template">
+    <!--description for this document-->
+    <meta name="description" content="Trade Invest Pool HTML Template">
+    <!--author of this document-->
+    <meta name="author" content="Vlad">
+
+    <!--bootstrap 5 minified css source-->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <!--font awesome 5 minified css source-->
+    <link rel="stylesheet" href="assets/fonts/font_awesome/css/all.min.css">
+    <!--magnific popup-1.1.0 css source-->
+    <link rel="stylesheet" href="assets/css/vendor/magnific-popup.css">
+    <!--jquery nice select css source-->
+    <link rel="stylesheet" href="assets/css/vendor/nice-select.css">
+    <!--animate css source-->
+    <link rel="stylesheet" href="assets/css/vendor/animate.css">
+    <!--custom css source-->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="cs leaderboard-page">
+    <!-- ===preloader start=== -->
+    <div class="loader_wrapper" id="preloader">
+        <div class="loader">
+            <div class="face">
+                <div class="circle"></div>
+            </div>
+            <div class="face">
+                <div class="circle sd"></div>
+            </div>
+            <div class="percent">
+                <span class="counterr">100</span><span class="per">%</span>
+            </div>
+        </div>
+    </div>
+    <!-- ===preloader end=== -->
+
+    <!-- page wrapper start -->
+    <div class="page-wrapper">
+        <header>
+            <div class="toggle-sidebar d-lg-none">
+                <img src="assets/images/header/ic-bar.svg" alt="toggle bar icon">
+            </div>
+
+            <a href="#" class="ms-1 d-lg-none">
+                <img src="assets/images/tidelogo.svg" alt="logo" class="logo" style="visibility: visible;">
+            </a>
+
+            <ul class="header-left menu">
+                <li>
+                    <a href="#">
+                        <img src="assets/images/tidelogo.svg" alt="logo" class="logo">
+                    </a>
+                    <div class="close ms-auto">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                </li>
+                <div>
+                    <li><a href="#">Liquidity</a>
+                    </li>
+                </div>
+                <div>
+                    <li><a href="stake.html">Stake</a>
+                    </li>
+                </div>
+                <div>
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+                </div>
+            </ul>
+
+            <ul class="header-right menu">
+                <div>
+                    <li>
+                        <div class="text-uppercase text-nowrap d-flex align-items-center" style="cursor: default;">BNB
+                            chain[test]<i class="fas fa-angle-down wallet-modal-close"></i>
+                        </div>
+                    </li>
+                </div>
+
+                <div>
+                    <li class="me-0 wallet-modal-toggler">
+                        <div class="text-uppercase text-nowrap d-flex">Connect
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="pc-tab">
+                    <input checked="checked" id="tab1" type="radio" name="pct" />
+                    <input id="tab2" type="radio" name="pct" />
+                    <nav class="dialog-container">
+                        <ul class="radio-container">
+                            <div class="radio-button-group">
+                                <li class="tab1 radio-item blue w-50">
+                                    <label for="tab1" class="w-100">Traders</label>
+                                </li>
+                                <li class="tab2 radio-item orange w-50">
+                                    <label for="tab2" class="w-100">Positions</label>
+                                </li>
+                            </div>
+                        </ul>
+                    </nav>
+                    <section>
+                        <div class="tab1">
+                            <h3>Traders Leaderboard</h3>
+
+                            <input class="d-none" checked="checked" id="tab3" type="radio" name="pct1" />
+                            <input class="d-none" id="tab4" type="radio" name="pct1" />
+                            <input class="d-none" id="tab5" type="radio" name="pct1" />
+                            <nav class="dialog-container">
+                                <ul class="radio-container">
+                                    <div class="radio-button-group ms-0">
+                                        <li class="tab3 radio-item blue w-50">
+                                            <label for="tab3" class="w-100">24 Hours</label>
+                                        </li>
+                                        <li class="tab4 radio-item orange w-50">
+                                            <label for="tab4" class="w-100">7 Days</label>
+                                        </li>
+                                        <li class="tab5 radio-item orange w-50">
+                                            <label for="tab5" class="w-100">1 Month</label>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </nav>
+
+                            <section>
+                                <div class="tab3">
+                                    <table class="sortable positions-table">
+                                        <thead class="table-head">
+                                            <tr>
+                                                <th class="table-cell">Account</th>
+                                                <th class="table-cell">Market</th>
+                                                <th class="table-cell text-end">Side</th>
+                                                <th class="table-cell text-end">Lev.</th>
+                                                <th class="table-cell text-end">Size</th>
+                                                <th class="table-cell text-end">Entry Price</th>
+                                                <th class="table-cell text-end flex-grow-1">PNL</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="data-item">
+                                                <a href="leadership-detail.html">
+                                                    <td class="table-cell">
+                                                        <div class="chain-tag"><img
+                                                                src="assets/images/icon/arbitrum.dd7f8f4b.svg" alt="">
+                                                        </div>
+                                                        <span class="mc-avatar">
+                                                            <svg x="0" y="0" width="24" height="24">
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(4.698000001214254 -4.684258470764514) rotate(330.6 12 12)"
+                                                                    fill="#018E8C"></rect>
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(-3.7542364729440387 -13.026309567947305) rotate(319.5 12 12)"
+                                                                    fill="#03555E"></rect>
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(-17.215629914389766 -13.945941879208194) rotate(345.6 12 12)"
+                                                                    fill="#F93301"></rect>
+                                                            </svg>
+                                                        </span>0xc666...3b56
+                                                    </td>
+                                                    <td class="table-cell">
+                                                        <img width="24" height="24" class="me-1"
+                                                            src="https://mux-world.github.io/assets/img/tokens/BTC.svg">ETH
+                                                    </td>
+                                                    <td class="table-cell is-long">Long</td>
+                                                    <td class="table-cell">4.9x</td>
+                                                    <td class="table-cell">$1,779,861</td>
+                                                    <td class="table-cell">$2,009.6</td>
+                                                    <td class="table-cell"><span class="pn-number positive">-
+                                                            $169,954</span></td>
+                                                </a>
+                                            </tr>
+
+                                            <tr class="data-item">
+                                                <a href="leadership-detail.html">
+                                                    <td class="table-cell">
+                                                        <div class="chain-tag"><img
+                                                                src="assets/images/icon/arbitrum.dd7f8f4b.svg" alt="">
+                                                        </div>
+                                                        <span class="mc-avatar">
+                                                            <svg x="0" y="0" width="24" height="24">
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(0.5789532152199329 -1.902078264511483) rotate(379.3 12 12)"
+                                                                    fill="#FB1845"></rect>
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(-8.929238159262756 10.491842770875667) rotate(300.1 12 12)"
+                                                                    fill="#F5E000"></rect>
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(-6.022324196384225 -20.515415947952526) rotate(260.3 12 12)"
+                                                                    fill="#F2BA02"></rect>
+                                                            </svg>
+                                                        </span>0xe8c1...39bd
+                                                    </td>
+                                                </a>
+
+                                                <td class="table-cell">
+                                                    <img width="24" height="24" class="me-1"
+                                                        src="https://mux-world.github.io/assets/img/tokens/ETH.svg">ETH
+                                                </td>
+                                                <td class="table-cell is-short">Short</td>
+                                                <td class="table-cell">41.1x</td>
+                                                <td class="table-cell">$4,755,970</td>
+                                                <td class="table-cell">$1,819.6</td>
+                                                <td class="table-cell"><span class="pn-number negative">- $2,921</span>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="data-item">
+                                                <a href="leadership-detail.html">
+                                                    <td class="table-cell">
+                                                        <div class="chain-tag"><img
+                                                                src="assets/images/icon/arbitrum.dd7f8f4b.svg" alt="">
+                                                        </div>
+                                                        <span class="mc-avatar">
+                                                            <svg x="0" y="0" width="24" height="24">
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(-2.739809829405925 -5.612740628862297) rotate(293.2 12 12)"
+                                                                    fill="#F93F01"></rect>
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(7.1775798097252625 6.082032507656372) rotate(45.2 12 12)"
+                                                                    fill="#FB1860"></rect>
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(-16.490968044596 16.911727413494457) rotate(297.8 12 12)"
+                                                                    fill="#01898E"></rect>
+                                                            </svg>
+                                                        </span>0xbb87...4281
+                                                    </td>
+                                                    <td class="table-cell">
+                                                        <img width="24" height="24" class="me-1"
+                                                            src="https://mux-world.github.io/assets/img/tokens/BTC.svg">BTC
+                                                    </td>
+                                                    <td class="table-cell is-short">Short</td>
+                                                    <td class="table-cell">42.0x</td>
+                                                    <td class="table-cell">$2,029,745</td>
+                                                    <td class="table-cell">$27,582</td>
+                                                    <td class="table-cell"><span class="pn-number positive">+
+                                                            $2,284</span>
+                                                    </td>
+                                                </a>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="tab4">
+                                    <table class="sortable positions-table">
+                                        <thead class="table-head">
+                                            <tr>
+                                                <th class="table-cell">Account</th>
+                                                <th class="table-cell">Market</th>
+                                                <th class="table-cell text-end">Side</th>
+                                                <th class="table-cell text-end">Lev.</th>
+                                                <th class="table-cell text-end">Size</th>
+                                                <th class="table-cell text-end">Entry Price</th>
+                                                <th class="table-cell text-end flex-grow-1">PNL</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="data-item">
+                                                <a href="leadership-detail.html">
+                                                    <td class="table-cell">
+                                                        <div class="chain-tag"><img
+                                                                src="assets/images/icon/arbitrum.dd7f8f4b.svg" alt="">
+                                                        </div>
+                                                        <span class="mc-avatar">
+                                                            <svg x="0" y="0" width="24" height="24">
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(-2.739809829405925 -5.612740628862297) rotate(293.2 12 12)"
+                                                                    fill="#F93F01"></rect>
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(7.1775798097252625 6.082032507656372) rotate(45.2 12 12)"
+                                                                    fill="#FB1860"></rect>
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(-16.490968044596 16.911727413494457) rotate(297.8 12 12)"
+                                                                    fill="#01898E"></rect>
+                                                            </svg>
+                                                        </span>0xbb87...4281
+                                                    </td>
+                                                    <td class="table-cell">
+                                                        <img width="24" height="24" class="me-1"
+                                                            src="https://mux-world.github.io/assets/img/tokens/BTC.svg">BTC
+                                                    </td>
+                                                    <td class="table-cell is-short">Short</td>
+                                                    <td class="table-cell">42.0x</td>
+                                                    <td class="table-cell">$2,029,745</td>
+                                                    <td class="table-cell">$27,582</td>
+                                                    <td class="table-cell"><span class="pn-number positive">+
+                                                            $2,284</span>
+                                                    </td>
+                                                </a>
+                                            </tr>
+
+                                            <tr class="data-item">
+                                                <a href="leadership-detail.html">
+                                                    <td class="table-cell">
+                                                        <div class="chain-tag"><img
+                                                                src="assets/images/icon/arbitrum.dd7f8f4b.svg" alt="">
+                                                        </div>
+                                                        <span class="mc-avatar">
+                                                            <svg x="0" y="0" width="24" height="24">
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(0.5789532152199329 -1.902078264511483) rotate(379.3 12 12)"
+                                                                    fill="#FB1845"></rect>
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(-8.929238159262756 10.491842770875667) rotate(300.1 12 12)"
+                                                                    fill="#F5E000"></rect>
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(-6.022324196384225 -20.515415947952526) rotate(260.3 12 12)"
+                                                                    fill="#F2BA02"></rect>
+                                                            </svg>
+                                                        </span>0xe8c1...39bd
+                                                    </td>
+                                                    <td class="table-cell">
+                                                        <img width="24" height="24" class="me-1"
+                                                            src="https://mux-world.github.io/assets/img/tokens/ETH.svg">ETH
+                                                    </td>
+                                                    <td class="table-cell is-short">Short</td>
+                                                    <td class="table-cell">41.1x</td>
+                                                    <td class="table-cell">$4,755,970</td>
+                                                    <td class="table-cell">$1,819.6</td>
+                                                    <td class="table-cell"><span class="pn-number negative">-
+                                                            $2,921</span>
+                                                    </td>
+                                                </a>
+                                            </tr>
+
+                                            <tr class="data-item">
+                                                <a href="leadership-detail.html">
+                                                    <td class="table-cell">
+                                                        <div class="chain-tag"><img
+                                                                src="assets/images/icon/arbitrum.dd7f8f4b.svg" alt="">
+                                                        </div>
+                                                        <span class="mc-avatar">
+                                                            <svg x="0" y="0" width="24" height="24">
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(4.698000001214254 -4.684258470764514) rotate(330.6 12 12)"
+                                                                    fill="#018E8C"></rect>
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(-3.7542364729440387 -13.026309567947305) rotate(319.5 12 12)"
+                                                                    fill="#03555E"></rect>
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(-17.215629914389766 -13.945941879208194) rotate(345.6 12 12)"
+                                                                    fill="#F93301"></rect>
+                                                            </svg>
+                                                        </span>0xc666...3b56
+                                                    </td>
+                                                    <td class="table-cell">
+                                                        <img width="24" height="24" class="me-1"
+                                                            src="https://mux-world.github.io/assets/img/tokens/BTC.svg">ETH
+                                                    </td>
+                                                    <td class="table-cell is-long">Long</td>
+                                                    <td class="table-cell">4.9x</td>
+                                                    <td class="table-cell">$1,779,861</td>
+                                                    <td class="table-cell">$2,009.6</td>
+                                                    <td class="table-cell"><span class="pn-number positive">-
+                                                            $169,954</span></td>
+                                                </a>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="tab5">
+                                    <table class="sortable positions-table">
+                                        <thead class="table-head">
+                                            <tr>
+                                                <th class="table-cell">Account</th>
+                                                <th class="table-cell">Market</th>
+                                                <th class="table-cell text-end">Side</th>
+                                                <th class="table-cell text-end">Lev.</th>
+                                                <th class="table-cell text-end">Size</th>
+                                                <th class="table-cell text-end">Entry Price</th>
+                                                <th class="table-cell text-end flex-grow-1">PNL</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="data-item">
+                                                <a href="leadership-detail.html">
+                                                    <td class="table-cell">
+                                                        <div class="chain-tag"><img
+                                                                src="assets/images/icon/arbitrum.dd7f8f4b.svg" alt="">
+                                                        </div>
+                                                        <span class="mc-avatar">
+                                                            <svg x="0" y="0" width="24" height="24">
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(0.5789532152199329 -1.902078264511483) rotate(379.3 12 12)"
+                                                                    fill="#FB1845"></rect>
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(-8.929238159262756 10.491842770875667) rotate(300.1 12 12)"
+                                                                    fill="#F5E000"></rect>
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(-6.022324196384225 -20.515415947952526) rotate(260.3 12 12)"
+                                                                    fill="#F2BA02"></rect>
+                                                            </svg>
+                                                        </span>0xe8c1...39bd
+                                                    </td>
+                                                    <td class="table-cell">
+                                                        <img width="24" height="24" class="me-1"
+                                                            src="https://mux-world.github.io/assets/img/tokens/ETH.svg">ETH
+                                                    </td>
+                                                    <td class="table-cell is-short">Short</td>
+                                                    <td class="table-cell">41.1x</td>
+                                                    <td class="table-cell">$4,755,970</td>
+                                                    <td class="table-cell">$1,819.6</td>
+                                                    <td class="table-cell"><span class="pn-number negative">-
+                                                            $2,921</span>
+                                                    </td>
+                                                </a>
+                                            </tr>
+
+                                            <tr class="data-item">
+                                                <a href="leadership-detail.html">
+                                                    <td class="table-cell">
+                                                        <div class="chain-tag"><img
+                                                                src="assets/images/icon/arbitrum.dd7f8f4b.svg" alt="">
+                                                        </div>
+                                                        <span class="mc-avatar">
+                                                            <svg x="0" y="0" width="24" height="24">
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(-2.739809829405925 -5.612740628862297) rotate(293.2 12 12)"
+                                                                    fill="#F93F01"></rect>
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(7.1775798097252625 6.082032507656372) rotate(45.2 12 12)"
+                                                                    fill="#FB1860"></rect>
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(-16.490968044596 16.911727413494457) rotate(297.8 12 12)"
+                                                                    fill="#01898E"></rect>
+                                                            </svg>
+                                                        </span>0xbb87...4281
+                                                    </td>
+                                                    <td class="table-cell">
+                                                        <img width="24" height="24" class="me-1"
+                                                            src="https://mux-world.github.io/assets/img/tokens/BTC.svg">BTC
+                                                    </td>
+                                                    <td class="table-cell is-short">Short</td>
+                                                    <td class="table-cell">42.0x</td>
+                                                    <td class="table-cell">$2,029,745</td>
+                                                    <td class="table-cell">$27,582</td>
+                                                    <td class="table-cell"><span class="pn-number positive">+
+                                                            $2,284</span>
+                                                </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="data-item">
+                                                <a href="leadership-detail.html">
+                                                    <td class="table-cell">
+                                                        <div class="chain-tag"><img
+                                                                src="assets/images/icon/arbitrum.dd7f8f4b.svg" alt="">
+                                                        </div>
+                                                        <span class="mc-avatar">
+                                                            <svg x="0" y="0" width="24" height="24">
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(4.698000001214254 -4.684258470764514) rotate(330.6 12 12)"
+                                                                    fill="#018E8C"></rect>
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(-3.7542364729440387 -13.026309567947305) rotate(319.5 12 12)"
+                                                                    fill="#03555E"></rect>
+                                                                <rect x="0" y="0" width="24" height="24"
+                                                                    transform="translate(-17.215629914389766 -13.945941879208194) rotate(345.6 12 12)"
+                                                                    fill="#F93301"></rect>
+                                                            </svg>
+                                                        </span>0xc666...3b56
+                                                    </td>
+                                                    <td class="table-cell">
+                                                        <img width="24" height="24" class="me-1"
+                                                            src="https://mux-world.github.io/assets/img/tokens/BTC.svg">ETH
+                                                    </td>
+                                                    <td class="table-cell is-long">Long</td>
+                                                    <td class="table-cell">4.9x</td>
+                                                    <td class="table-cell">$1,779,861</td>
+                                                    <td class="table-cell">$2,009.6</td>
+                                                    <td class="table-cell"><span class="pn-number positive">-
+                                                            $169,954</span></td>
+                                                </a>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="tab2">
+                            <h3 class="mb-4">Open Positions</h3>
+
+                            <table class="sortable positions-table">
+                                <thead class="table-head">
+                                    <tr>
+                                        <th class="table-cell">Account</th>
+                                        <th class="table-cell">Market</th>
+                                        <th class="table-cell text-end">Side</th>
+                                        <th class="table-cell text-end">Lev.</th>
+                                        <th class="table-cell text-end">Size</th>
+                                        <th class="table-cell text-end">Entry Price</th>
+                                        <th class="table-cell text-end flex-grow-1">PNL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="data-item">
+                                        <a href="leadership-detail.html">
+                                            <td class="table-cell">
+                                                <div class="chain-tag"><img
+                                                        src="assets/images/icon/arbitrum.dd7f8f4b.svg" alt=""></div>
+                                                <span class="mc-avatar">
+                                                    <svg x="0" y="0" width="24" height="24">
+                                                        <rect x="0" y="0" width="24" height="24"
+                                                            transform="translate(0.5789532152199329 -1.902078264511483) rotate(379.3 12 12)"
+                                                            fill="#FB1845"></rect>
+                                                        <rect x="0" y="0" width="24" height="24"
+                                                            transform="translate(-8.929238159262756 10.491842770875667) rotate(300.1 12 12)"
+                                                            fill="#F5E000"></rect>
+                                                        <rect x="0" y="0" width="24" height="24"
+                                                            transform="translate(-6.022324196384225 -20.515415947952526) rotate(260.3 12 12)"
+                                                            fill="#F2BA02"></rect>
+                                                    </svg>
+                                                </span>0xe8c1...39bd
+                                            </td>
+                                            <td class="table-cell">
+                                                <img width="24" height="24" class="me-1"
+                                                    src="https://mux-world.github.io/assets/img/tokens/ETH.svg">ETH
+                                            </td>
+                                            <td class="table-cell is-short">Short</td>
+                                            <td class="table-cell">41.1x</td>
+                                            <td class="table-cell">$4,755,970</td>
+                                            <td class="table-cell">$1,819.6</td>
+                                            <td class="table-cell"><span class="pn-number negative">- $2,921</span></td>
+                                        </a>
+                                    </tr>
+
+                                    <tr class="data-item">
+                                        <a href="leadership-detail.html">
+                                            <td class="table-cell">
+                                                <div class="chain-tag"><img
+                                                        src="assets/images/icon/arbitrum.dd7f8f4b.svg" alt=""></div>
+                                                <span class="mc-avatar">
+                                                    <svg x="0" y="0" width="24" height="24">
+                                                        <rect x="0" y="0" width="24" height="24"
+                                                            transform="translate(-2.739809829405925 -5.612740628862297) rotate(293.2 12 12)"
+                                                            fill="#F93F01"></rect>
+                                                        <rect x="0" y="0" width="24" height="24"
+                                                            transform="translate(7.1775798097252625 6.082032507656372) rotate(45.2 12 12)"
+                                                            fill="#FB1860"></rect>
+                                                        <rect x="0" y="0" width="24" height="24"
+                                                            transform="translate(-16.490968044596 16.911727413494457) rotate(297.8 12 12)"
+                                                            fill="#01898E"></rect>
+                                                    </svg>
+                                                </span>0xbb87...4281
+                                            </td>
+                                            <td class="table-cell">
+                                                <img width="24" height="24" class="me-1"
+                                                    src="https://mux-world.github.io/assets/img/tokens/BTC.svg">BTC
+                                            </td>
+                                            <td class="table-cell is-short">Short</td>
+                                            <td class="table-cell">42.0x</td>
+                                            <td class="table-cell">$2,029,745</td>
+                                            <td class="table-cell">$27,582</td>
+                                            <td class="table-cell"><span class="pn-number positive">+ $2,284</span></td>
+                                        </a>
+                                    </tr>
+
+                                    <tr class="data-item">
+                                        <a href="leadership-detail.html">
+                                            <td class="table-cell">
+                                                <div class="chain-tag"><img
+                                                        src="assets/images/icon/arbitrum.dd7f8f4b.svg" alt=""></div>
+                                                <span class="mc-avatar">
+                                                    <svg x="0" y="0" width="24" height="24">
+                                                        <rect x="0" y="0" width="24" height="24"
+                                                            transform="translate(4.698000001214254 -4.684258470764514) rotate(330.6 12 12)"
+                                                            fill="#018E8C"></rect>
+                                                        <rect x="0" y="0" width="24" height="24"
+                                                            transform="translate(-3.7542364729440387 -13.026309567947305) rotate(319.5 12 12)"
+                                                            fill="#03555E"></rect>
+                                                        <rect x="0" y="0" width="24" height="24"
+                                                            transform="translate(-17.215629914389766 -13.945941879208194) rotate(345.6 12 12)"
+                                                            fill="#F93301"></rect>
+                                                    </svg>
+                                                </span>0xc666...3b56
+                                            </td>
+                                            <td class="table-cell">
+                                                <img width="24" height="24" class="me-1"
+                                                    src="https://mux-world.github.io/assets/img/tokens/BTC.svg">ETH
+                                            </td>
+                                            <td class="table-cell is-long">Long</td>
+                                            <td class="table-cell">4.9x</td>
+                                            <td class="table-cell">$1,779,861</td>
+                                            <td class="table-cell">$2,009.6</td>
+                                            <td class="table-cell"><span class="pn-number positive">- $169,954</span>
+                                            </td>
+                                        </a>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- page wrapper end -->
+
+    <div class="modal-group">
+        <!--modal start-->
+        <div class="wallet-modal">
+            <div class="wallet-overlay"></div>
+
+            <div class="wallet-wrapper">
+                <div>
+                    <div class="wallet-modal-header">
+                        <div class="text-uppercase text-white">Connect Wallet</div>
+                        <i class="fa fa-arrow-alt-circle-left wallet-modal-close"></i>
+                    </div>
+                    <div class="wallet-modal-body">
+                        <div>
+                            <button class="bg-transparent">
+                                <img src="assets/images/icon/ic-browser-wallet.png" alt="Browser Wallets">Browser
+                                Wallets</button>
+                        </div>
+                        <div>
+                            <button class="bg-transparent">
+                                <img src="assets/images/icon/ic-wallet-connect.png" alt="Wallet Connect">Wallet
+                                Connect</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--modal end-->
+    </div>
+
+    <!-- node status bar start -->
+    <div class="node-status-viewer">
+        <div class="d-flex align-items-center">
+            <span class="status"></span>
+            <span class="label">
+                <a class="block" target="_blank" href="#">84077392</a>
+            </span>
+        </div>
+    </div>
+    <!-- node status bar end -->
+
+    <!--jquery-3.6.0 minified source-->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <!--bootstrap 5 minified bundle js source-->
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <!--jquery waypoints minified source-->
+    <script src="assets/js/vendor/jquery.waypoints.min.js"></script>
+    <!--magnific popup-1.1.0 minified source-->
+    <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+    <!--magnific popup-1.1.0 minified source-->
+    <script src="assets/js/vendor/jquery.counterup.min.js"></script>
+    <!--jquery nice select minified source-->
+    <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
+    <!--apexs chart minified js source-->
+    <script src="assets/js/vendor/apexcharts.min.js"></script>
+    <!--apex chart customization js source-->
+    <script src="assets/js/vendor/apex-customization.js"></script>
+
+    <!--custom js source-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

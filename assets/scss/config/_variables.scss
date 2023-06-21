@@ -1,0 +1,74 @@
+/*===========variable declaration start===========*/
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;600;700;800&display=swap');
+
+
+/*===========variable declaration end============*/
+$theme-font: "IBM Plex Mono";
+//variables for google fonts
+$open-sans: "Open Sans", sans-serif;
+$arial: "Arial";
+
+//variables for font sizes
+$hero-font: 60px;
+$title-font: 50px;
+$info-font: 18px;
+$para-font: 18px;
+$nav-font: 16px;
+$secondary-font: 24px;
+
+//variables for background colors
+$theme-bg: #18181a;
+$secondary-bg: #181e4e;
+$sidebar-bg: #29292c;
+$head-bg: #242324;
+
+//variables for fonts color
+$title-color: #ffffff;
+$info-color: #acacac;
+$para-color: #acacac;
+$nav-color: #d7d8ff;
+$hover-color: #f5317f;
+$secondary-color: #ffc600;
+$border-color: #363636;
+$link: #0dcaf0;
+
+//variables for box shadow
+$shadow: 0px 19px 56px 0px rgba(0, 0, 0, 0.2);
+$shadow_two: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+body {
+    --bg-dark: #0f1529;
+    --primary-blue: #00d8e2;
+    --primary-orange: #fa8337;
+    --primary-green: #10c8a8;
+    --primary-red: #ff4e59;
+    --primary-brand: #27a2f8;
+    --primary-brand-hover: #44acf6;
+    --bg-darkest: #000;
+    --text-color: #6678a9;
+    --text-color-dark: #3e5081;
+    --white-color: #fff;
+    --success-color: #10c8a8;
+    --error-color: #ff4e59;
+    --warning-color: #ffb313;
+    --line-color-dark: #1e263f;
+    --line-dark-normal: #283148;
+    --bg-secondary: #151c32;
+    --bg-normal: #232b48;
+    --bg-light: #373f5c;
+    --primary-color: #27a2f8;
+    --line-color-light: #555d7a;
+    --bg-dark-normal: #18181a;
+    --primary-gradient-border: linear-gradient(90deg, #00D3E2 0%, #27A2F8 100%);
+    --primary-brand-gradient: linear-gradient(90deg, #04A7B4 0%, #4990C5 100%);
+    --line-normal: rgba(40, 49, 72, .5);
+}
+
+.text-danger {
+    color: var(--error-color) !important;
+}
+
+.text-warning {
+    color: var(--warning-color) !important;
+}

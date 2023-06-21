@@ -1,0 +1,250 @@
+.account-page {
+    .account-detail {
+        margin-top: 2rem;
+    }
+
+    .account-header {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 600;
+
+        i {
+            font-size: 16px;
+            margin-right: 16px;
+            cursor: pointer;
+        }
+
+        .mc-avatar {
+            margin-right: 8px;
+            border-radius: 50px;
+            overflow: hidden;
+        }
+
+        .margin-left-box {
+            margin-left: 4px;
+        }
+    }
+
+    .info {
+        padding: 24px;
+        border-radius: 16px;
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 600;
+        background: $head-bg;
+        overflow: hidden;
+        position: relative;
+
+        .label {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+            color: var(--text-color);
+            margin-top: 4px;
+            z-index: 2;
+            position: relative;
+        }
+    }
+
+    .account-info {
+        border-radius: 0 0 16px 16px;
+        margin-top: -16px;
+        border: 1px solid $head-bg;
+        border-top: unset;
+        background: rgba($head-bg, .5);
+        padding: 40px 23px 23px;
+        min-height: 180px;
+    }
+
+    .info-box {
+        width: 400px;
+    }
+
+    .data-item {
+        .chain-tag {
+            left: -1px;
+            border-radius: 0 0 12px 0;
+            position: absolute;
+            z-index: 10;
+            top: -1px;
+            background: var(--bg-normal);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4px 8px;
+
+            img {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        .image-viewer {
+            height: 24px;
+            width: 24px;
+            margin-right: 8px;
+            position: relative;
+            display: inline-block;
+        }
+    }
+
+    .orange-color {
+        color: var(--primary-red);
+    }
+
+    &.leaderboard-page .positions-table {
+
+        .table-head {
+            display: flex;
+        }
+
+        tbody,
+        thead {
+            display: block;
+        }
+
+        .table-cell:first-of-type {
+            width: 17.2%;
+        }
+
+        .table-cell:nth-of-type(2) {
+            width: 16.9%;
+        }
+
+        .table-cell:nth-of-type(3) {
+            width: 13%;
+            justify-content: start;
+        }
+
+        .table-cell:nth-of-type(4) {
+            width: 16.9%;
+            justify-content: start;
+        }
+
+        .table-cell:nth-of-type(5) {
+            width: 12.2%;
+            justify-content: start;
+        }
+
+        .table-cell:nth-of-type(6) {
+            width: 12.2%;
+            justify-content: start;
+        }
+
+        .table-cell:nth-of-type(7) {
+            width: auto;
+            justify-content: start;
+            flex-grow: 1;
+        }
+    }
+
+    .trades-table {
+        .trade-info {
+            display: flex;
+            align-items: center;
+            background: var(--bg-darkest);
+            padding: 15px 23px 17px;
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--white-color);
+
+            .info-item:first-of-type {
+                width: 182px;
+                margin-left: unset;
+            }
+
+            .info-item:nth-of-type(2) {
+                width: 152px;
+            }
+
+            .info-item:nth-of-type(3) {
+                width: auto;
+            }
+
+            .info-item {
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                line-height: 20px;
+                margin-left: 32px;
+
+                .label {
+                    margin-right: 4px;
+                }
+
+                .value {
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .table-head,
+        .table-body {
+            .table-cell:first-of-type {
+                width: 14.8%;
+            }
+
+            .table-cell:nth-of-type(2) {
+                width: 12.8%;
+            }
+
+            .table-cell:nth-of-type(3) {
+                width: 14.8%;
+            }
+
+            .table-cell:nth-of-type(4) {
+                width: 12.2%;
+            }
+
+            .table-cell:nth-of-type(5) {
+                width: 18%;
+            }
+
+            .table-cell:nth-of-type(6) {
+                width: 15.9%;
+            }
+
+            .table-cell:nth-of-type(7) {
+                width: auto;
+            }
+        }
+
+        .table-head {
+            display: flex;
+            align-items: center;
+            background: var(--bg-darkest);
+            padding: 15px 23px 15px;
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--text-color);
+        }
+
+        .data-item {
+            display: flex;
+            align-items: center;
+            height: 91px;
+            border-top: 1px solid var(--line-color-dark);
+            padding: 0 23px;
+            font-size: 14px;
+            line-height: 20px;
+            background: rgba(25, 33, 55, .5);
+            position: relative;
+        }
+    }
+
+    .radio-button-group {
+        background-color: transparent;
+    }
+}
+
+@include max-screen(991px) {
+    .account-page .info-box {
+        width: 100%;
+    }
+
+    .account-page .trades-table .trade-info {
+        flex-wrap: wrap;
+    }
+}

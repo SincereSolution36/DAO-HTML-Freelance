@@ -1,0 +1,77 @@
+.btn {
+    margin: 0;
+    font-weight: 400;
+    line-height: 1;
+    font-family: inherit;
+    padding: 0 14px;
+    height: 34px;
+    font-size: 14px;
+    border-radius: 3px;
+    color: rgba(255, 255, 255, 0.82);
+    background-color: rgba(255, 255, 255, 0.08);
+    width: initial;
+    white-space: nowrap;
+    outline: none;
+    position: relative;
+    z-index: auto;
+    border: none;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    -webkit-user-select: none;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color .3s cubic-bezier(0.4, 0, 0.2, 1), background-color .3s cubic-bezier(0.4, 0, 0.2, 1), opacity .3s cubic-bezier(0.4, 0, 0.2, 1), border-color .3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn.btn-primary-gradient,
+.btn.btn-primary-gradient:not(.btn-disabled):active:not(:hover),
+.btn.btn-primary-gradient:not(.btn-disabled):focus:not(:hover) {
+    background: linear-gradient(90deg, #04a7b4, #4990c5);
+}
+
+.btn.btn-primary-gradient:not(.btn-disabled):hover {
+    background: linear-gradient(90deg, #00d3e2, #27a2f8) !important;
+}
+
+.btn.btn-primary-blue,
+.btn.btn-primary-blue:not(.btn-disabled):active:not(:hover),
+.btn.btn-primary-blue:not(.btn-disabled):focus:not(:hover) {
+    background: rgba(0, 216, 226, .15);
+    color: var(--primary-blue);
+}
+
+.btn.btn-primary-blue:not(.btn-disabled):hover {
+    background: rgba(0, 216, 226, .2) !important;
+    border: 1px solid rgba(0, 216, 226, .25);
+    color: var(--primary-blue);
+}
+
+.btn.btn-primary-gradient {
+    border: unset;
+}
+
+.btn.btn-primary-blue {
+    border: 1px solid rgba(0, 216, 226, .2);
+}
+
+.btn-round {
+    border-radius: 12px;
+}
+
+.btn-expand {
+    width: 100% !important;
+}
+
+.btn-disabled {
+    cursor: not-allowed;
+    opacity: .5;
+}
+
+.btn.btn-large-bold {
+    height: 52px;
+}

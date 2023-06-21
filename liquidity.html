@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--required meta-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--title for this document-->
+    <title>Trade &mdash; Invest &amp; Pool</title>
+    <!--favicon for this document-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!--keywords for this  document-->
+    <meta name="keywords" content="Trade, Invest, Pool HTML Template">
+    <!--description for this document-->
+    <meta name="description" content="Trade Invest Pool HTML Template">
+    <!--author of this document-->
+    <meta name="author" content="Vlad">
+
+    <!--bootstrap 5 minified css source-->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <!--font awesome 5 minified css source-->
+    <link rel="stylesheet" href="assets/fonts/font_awesome/css/all.min.css">
+    <!--magnific popup-1.1.0 css source-->
+    <link rel="stylesheet" href="assets/css/vendor/magnific-popup.css">
+    <!--jquery nice select css source-->
+    <link rel="stylesheet" href="assets/css/vendor/nice-select.css">
+    <!--animate css source-->
+    <link rel="stylesheet" href="assets/css/vendor/animate.css">
+    <!--custom css source-->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="cs liquidity-page">
+    <!-- ===preloader start=== -->
+    <div class="loader_wrapper" id="preloader">
+        <div class="loader">
+            <div class="face">
+                <div class="circle"></div>
+            </div>
+            <div class="face">
+                <div class="circle sd"></div>
+            </div>
+            <div class="percent">
+                <span class="counterr">100</span><span class="per">%</span>
+            </div>
+        </div>
+    </div>
+    <!-- ===preloader end=== -->
+
+    <!-- page wrapper start -->
+    <div class="page-wrapper">
+        <header>
+            <div class="toggle-sidebar d-lg-none">
+                <img src="assets/images/header/ic-bar.svg" alt="toggle bar icon">
+            </div>
+
+            <a href="#" class="ms-1 d-lg-none">
+                <img src="assets/images/tidelogo.svg" alt="logo" class="logo" style="visibility: visible;">
+            </a>
+
+            <ul class="header-left menu">
+                <li>
+                    <a href="#">
+                        <img src="assets/images/tidelogo.svg" alt="logo" class="logo">
+                    </a>
+                    <div class="close ms-auto">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                </li>
+                <div>
+                    <li><a href="#">Liquidity</a>
+                    </li>
+                </div>
+                <div>
+                    <li><a href="stake.html">Stake</a>
+                    </li>
+                </div>
+                <div>
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+                </div>
+            </ul>
+
+            <ul class="header-right menu">
+                <div>
+                    <li>
+                        <div class="text-uppercase text-nowrap d-flex align-items-center" style="cursor: default;">BNB
+                            chain[test]<i class="fas fa-angle-down wallet-modal-close"></i>
+                        </div>
+                    </li>
+                </div>
+
+                <div>
+                    <li class="me-0 wallet-modal-toggler">
+                        <div class="text-uppercase text-nowrap d-flex">Connect
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="liquidity-management-container">
+                    <div class="title mt-4 pt-2">
+                        <div class="title-line d-flex align-items-center justify-content-between">
+                            <h3>Liquidity Overview</h3>
+                            <div class="options-label">
+                                <select id="selectPool" aria-placeholder="View Pool Addresses">
+                                    <option value="1"><span><img src="assets/images/icon/ic-browser-wallet.png"
+                                                alt="Browser Wallets">Arbitrum Pool</span></option>
+                                    <option value="2">BNB Chain Pool</option>
+                                    <option value="3">Optimism Pool</option>
+                                    <option value="4">Avalanche Pool</option>
+                                    <option value="5">Fantom Pool</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="prompt">
+                            <p>Provide liquidity through buying MUXLP, the protocol’s liquidity provider token.
+                                Liquidity providers can stake MUXLP to earn protocol income(protocol fees and
+                                third-party DEX mining rewards) and MUX rewards. <a target="_blank" href="#">Learn
+                                    More</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 d-flex w-100 justify-content-between liquidity-manage-container">
+                        <div class="left p-relative">
+                            <div class="label">
+                                <div class="liquidity-image-viewer">
+                                    <img width="32" height="32"
+                                        src="https://mux-world.github.io/assets/img/tokens/MUXLP.svg">
+                                </div>MUXLP
+                            </div>
+
+                            <div class="liquidity-stats-item">
+                                <div class="item-title">
+                                    <span class="tooltip-element__text-color">Stake APR</span>
+                                </div>
+                                <div class="item-value apr">
+                                    <span class="tooltip-element__blue">55.81%</span>
+                                </div>
+                            </div>
+
+                            <div class="liquidity-stats-item">
+                                <div class="item-title">
+                                    <span class="tooltip-element__text-color">Price</span>
+                                </div>
+                                <div class="item-value">$1.031</div>
+                            </div>
+
+                            <div class="liquidity-stats-item">
+                                <div class="item-title">
+                                    <span class="tooltip-element__text-color">Total Supply</span>
+                                </div>
+                                <div class="item-value">30,268,491 MUXLP</div>
+                            </div>
+
+                            <div class="liquidity-stats-item">
+                                <div class="item-title">
+                                    <span class="tooltip-element__text-color">Total Staked</span>
+                                </div>
+                                <div class="item-value">30,139,267 MUXLP</div>
+                            </div>
+
+                            <div class="liquidity-stats-item">
+                                <div class="item-title">
+                                    <span class="tooltip-element__text-color">MUXLP Pool Value</span>
+                                </div>
+                                <div class="item-value">$31,216,294</div>
+                            </div>
+
+                            <div class="liquidity-stats-item">
+                                <div class="item-title">
+                                    <span class="tooltip-element__text-color">MUXLP Pool Value</span>
+                                </div>
+                                <div class="item-value">29.59%</div>
+                            </div>
+
+                            <div class="button-box">
+                                <button
+                                    class="btn btn-default btn-md btn-secondary btn-round btn-primary-gradient btn-lg"><span>Buy
+                                        / Sell MUXLP</span>
+                                </button>
+                                <button
+                                    class="btn btn-default btn-md btn-secondary btn-round btn-primary-blue btn-lg"><span>Stake
+                                        MUXLP</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="right p-relative liquidity-stats">
+                            <h3 class="summary mb-4">Liquidity Multiplexing</h3>
+                            <div class="stats-container">
+                                <div class="liquidity-chart">
+                                    <div class="chart-container">
+                                        <div width="202" height="202" id="liquidity-chart"></div>
+                                        <div class="center-text">
+                                            <div class="value">49.24%</div>
+                                            <div class="label">
+                                                <span class="tooltip-element__text-color">Utilization</span>
+                                            </div>
+                                        </div>
+                                        <div class="canvas-tooltip-container" style="display: none;">
+                                            <div class="canvas-tooltip">
+                                                <div class="label">
+                                                    <div class="val">MUX Margin Trading</div>
+                                                </div>
+                                                <div class="weight"><br>
+                                                    <div>Current Weight: <span class="current-weight"></span></div>
+                                                    <div>Target Weight: <span class="target-weight"></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <div class="liquidity-item active">
+                                            <div class="value-box">
+                                                <div class="color"></div>
+                                                <div class="value">
+                                                    <div class="liquidity-value">49.2% ($15,371,121)</div>
+                                                </div>
+                                            </div>
+                                            <div class="label-box">
+                                                <div class="liquidity-label">MUX Margin Trading</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="assets-stats-container">
+                    <div class="title mt-5">
+                        <div class="title-line d-flex align-items-center justify-content-between">
+                            <h3>Liquidity Composition</h3>
+                        </div>
+
+                        <div class="prompt">
+                            <p>The MUXLP pool consists of an assets portfolio; the assets are dynamically allocated for
+                                margin trading.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 d-grid w-100 liquidity-manage-container">
+                        <div class="assets-info">
+                            <div class="bg">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="120" height="120"
+                                            src="https://mux-world.github.io/assets/img/tokens/ETH.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assets-chain">
+                                <div class="chain-name"><img src="assets/images/icon/arbitrum.dd7f8f4b.svg" alt=""><i
+                                        class="fa fa-plus"></i></div>
+                                <div class="chain-name"><img src="assets/images/icon/BSC.a81b35b6.svg" alt=""><i
+                                        class="fa fa-plus"></i></div>
+                                <div class="chain-name"><img src="assets/images/icon/optimism.27bcaf75.svg" alt=""><i
+                                        class="fa fa-plus"></i></div>
+                                <div class="chain-name"><img src="assets/images/icon/AvalancheChain.40daf77d.svg"
+                                        alt=""><i class="fa fa-plus"></i></div>
+                                <div class="chain-name"><img src="assets/images/icon/FantomChain.07b2eb9e.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="assets-name">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="32" height="32"
+                                            src="https://mux-world.github.io/assets/img/tokens/ETH.svg">
+                                    </div>
+                                </div>
+                                <div class="label">ETH</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Price</div>
+                                <div class="item-value">$1,827.3</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Total Pooled</div>
+                                <div class="item-value"><span class="tooltip-element__white">$7,846,792</span>
+                                </div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Weight</div>
+                                <div class="item-value"><span class="tooltip-element__white">25.08% / 26.00%
+                                    </span></div>
+                            </div>
+                            <div class="liquidity-stats-item mb-0">
+                                <div>Margin Trading Utilization</div>
+                                <div class="item-value">43.91%</div>
+                            </div>
+                        </div>
+
+                        <div class="assets-info">
+                            <div class="bg">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="120" height="120"
+                                            src="https://mux-world.github.io/assets/img/tokens/BTC.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assets-chain">
+                                <div class="chain-name"><img src="assets/images/icon/arbitrum.dd7f8f4b.svg" alt=""><i
+                                        class="fa fa-plus"></i></div>
+                                <div class="chain-name"><img src="assets/images/icon/BSC.a81b35b6.svg" alt=""><i
+                                        class="fa fa-plus"></i></div>
+                                <div class="chain-name"><img src="assets/images/icon/optimism.27bcaf75.svg" alt=""><i
+                                        class="fa fa-plus"></i></div>
+                                <div class="chain-name"><img src="assets/images/icon/AvalancheChain.40daf77d.svg"
+                                        alt=""><i class="fa fa-plus"></i></div>
+                                <div class="chain-name"><img src="assets/images/icon/FantomChain.07b2eb9e.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="assets-name">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="32" height="32"
+                                            src="https://mux-world.github.io/assets/img/tokens/BTC.svg">
+                                    </div>
+                                </div>
+                                <div class="label">BTC</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Price</div>
+                                <div class="item-value">$27,384</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Total Pooled</div>
+                                <div class="item-value"><span class="tooltip-element__white">$3,966,832</span>
+                                </div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Weight</div>
+                                <div class="item-value"><span class="tooltip-element__white">12.68% / 13.00%
+                                    </span></div>
+                            </div>
+                            <div class="liquidity-stats-item mb-0">
+                                <div>Margin Trading Utilization</div>
+                                <div class="item-value">31.18%</div>
+                            </div>
+                        </div>
+
+                        <div class="assets-info">
+                            <div class="bg">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="120" height="120"
+                                            src="https://mux-world.github.io/assets/img/tokens/ARB.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assets-chain">
+                                <div class="chain-name"><img src="assets/images/icon/arbitrum.dd7f8f4b.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="assets-name">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="32" height="32"
+                                            src="https://mux-world.github.io/assets/img/tokens/ARB.svg">
+                                    </div>
+                                </div>
+                                <div class="label">ARB</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Price</div>
+                                <div class="item-value">$1.3204</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Total Pooled</div>
+                                <div class="item-value"><span class="tooltip-element__white">$2,837,275</span>
+                                </div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Weight</div>
+                                <div class="item-value"><span class="tooltip-element__white">9.07% / 10.00%
+                                    </span></div>
+                            </div>
+                            <div class="liquidity-stats-item mb-0">
+                                <div>Margin Trading Utilization</div>
+                                <div class="item-value">85.53%</div>
+                            </div>
+                        </div>
+
+                        <div class="assets-info">
+                            <div class="bg">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="120" height="120"
+                                            src="https://mux-world.github.io/assets/img/tokens/AVAX.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assets-chain">
+                                <div class="chain-name"><img src="assets/images/icon/BSC.a81b35b6.svg" alt=""><i
+                                        class="fa fa-plus"></i></div>
+                                <div class="chain-name"><img src="assets/images/icon/AvalancheChain.40daf77d.svg"
+                                        alt=""></div>
+                            </div>
+                            <div class="assets-name">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="32" height="32"
+                                            src="https://mux-world.github.io/assets/img/tokens/AVAX.svg">
+                                    </div>
+                                </div>
+                                <div class="label">AVAX</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Price</div>
+                                <div class="item-value">$17.015</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Total Pooled</div>
+                                <div class="item-value"><span class="tooltip-element__white">$361,108</span>
+                                </div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Weight</div>
+                                <div class="item-value"><span class="tooltip-element__white">1.15% / 2.20%
+                                    </span></div>
+                            </div>
+                            <div class="liquidity-stats-item mb-0">
+                                <div>Margin Trading Utilization</div>
+                                <div class="item-value">59.96%
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="assets-info">
+                            <div class="bg">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="120" height="120"
+                                            src="https://mux-world.github.io/assets/img/tokens/OP.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assets-chain">
+                                <div class="chain-name"><img src="assets/images/icon/optimism.27bcaf75.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="assets-name">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="32" height="32"
+                                            src="https://mux-world.github.io/assets/img/tokens/OP.svg">
+                                    </div>
+                                </div>
+                                <div class="label">OP</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Price</div>
+                                <div class="item-value">$2.1763</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Total Pooled</div>
+                                <div class="item-value"><span class="tooltip-element__white">$360,799</span>
+                                </div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Weight</div>
+                                <div class="item-value"><span class="tooltip-element__white">1.15% / 2.20%</span></div>
+                            </div>
+                            <div class="liquidity-stats-item mb-0">
+                                <div>Margin Trading Utilization</div>
+                                <div class="item-value">40.20%</div>
+                            </div>
+                        </div>
+
+                        <div class="assets-info">
+                            <div class="bg">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="120" height="120"
+                                            src="https://mux-world.github.io/assets/img/tokens/BNB.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assets-chain">
+                                <div class="chain-name"><img src="assets/images/icon/BSC.a81b35b6.svg" alt=""><i
+                                        class="fa fa-plus"></i></div>
+                                <div class="chain-name"><img src="assets/images/icon/FantomChain.07b2eb9e.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="assets-name">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="32" height="32"
+                                            src="https://mux-world.github.io/assets/img/tokens/BNB.svg">
+                                    </div>
+                                </div>
+                                <div class="label">BNB</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Price</div>
+                                <div class="item-value">$330.75</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Total Pooled</div>
+                                <div class="item-value"><span class="tooltip-element__white">$449,690</span>
+                                </div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Weight</div>
+                                <div class="item-value"><span class="tooltip-element__white">1.44% / 2.20%
+                                    </span></div>
+                            </div>
+                            <div class="liquidity-stats-item mb-0">
+                                <div>Margin Trading Utilization</div>
+                                <div class="item-value">43.37%</div>
+                            </div>
+                        </div>
+
+                        <div class="assets-info">
+                            <div class="bg">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="120" height="120"
+                                            src="https://mux-world.github.io/assets/img/tokens/FTM.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assets-chain">
+                                <div class="chain-name"><img src="assets/images/icon/arbitrum.dd7f8f4b.svg" alt=""><i
+                                        class="fa fa-plus"></i></div>
+                                <div class="chain-name"><img src="assets/images/icon/BSC.a81b35b6.svg" alt=""><i
+                                        class="fa fa-plus"></i></div>
+                                <div class="chain-name"><img src="assets/images/icon/FantomChain.07b2eb9e.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="assets-name">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="32" height="32"
+                                            src="https://mux-world.github.io/assets/img/tokens/FTM.svg">
+                                    </div>
+                                </div>
+                                <div class="label">FTM</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Price</div>
+                                <div class="item-value">$0.4068</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Total Pooled</div>
+                                <div class="item-value"><span class="tooltip-element__white">$231,552</span>
+                                </div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Weight</div>
+                                <div class="item-value"><span class="tooltip-element__white">0.74% / 2.20%
+                                    </span></div>
+                            </div>
+                            <div class="liquidity-stats-item mb-0">
+                                <div>Margin Trading Utilization</div>
+                                <div class="item-value">49.04%</div>
+                            </div>
+                        </div>
+
+                        <div class="assets-info">
+                            <div class="bg">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="120" height="120"
+                                            src="https://mux-world.github.io/assets/img/tokens/USDT.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assets-chain">
+                                <div class="chain-name"><img src="assets/images/icon/arbitrum.dd7f8f4b.svg" alt=""><i
+                                        class="fa fa-plus"></i></div>
+                                <div class="chain-name"><img src="assets/images/icon/BSC.a81b35b6.svg" alt=""><i
+                                        class="fa fa-plus"></i></div>
+                                <div class="chain-name"><img src="assets/images/icon/optimism.27bcaf75.svg" alt=""><i
+                                        class="fa fa-plus"></i></div>
+                                <div class="chain-name"><img src="assets/images/icon/AvalancheChain.40daf77d.svg"
+                                        alt=""></div>
+                            </div>
+                            <div class="assets-name">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="32" height="32"
+                                            src="https://mux-world.github.io/assets/img/tokens/USDT.svg">
+                                    </div>
+                                </div>
+                                <div class="label">USDT</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Price</div>
+                                <div class="item-value">$1.00</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Total Pooled</div>
+                                <div class="item-value"><span class="tooltip-element__white">$5,699,189</span>
+                                </div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Weight</div>
+                                <div class="item-value"><span class="tooltip-element__white">18.21% / 18.90%
+                                    </span></div>
+                            </div>
+                            <div class="liquidity-stats-item mb-0">
+                                <div>Margin Trading Utilization</div>
+                                <div class="item-value">63.30%</div>
+                            </div>
+                        </div>
+
+                        <div class="assets-info">
+                            <div class="bg">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="120" height="120"
+                                            src="https://mux-world.github.io/assets/img/tokens/USDC.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assets-chain">
+                                <div class="chain-name"><img src="assets/images/icon/arbitrum.dd7f8f4b.svg" alt=""><i
+                                        class="fa fa-plus"></i></div>
+                                <div class="chain-name"><img src="assets/images/icon/BSC.a81b35b6.svg" alt=""><i
+                                        class="fa fa-plus"></i></div>
+                                <div class="chain-name"><img src="assets/images/icon/optimism.27bcaf75.svg" alt=""><i
+                                        class="fa fa-plus"></i></div>
+                                <div class="chain-name"><img src="assets/images/icon/AvalancheChain.40daf77d.svg"
+                                        alt=""><i class="fa fa-plus"></i></div>
+                                <div class="chain-name"><img src="assets/images/icon/FantomChain.07b2eb9e.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="assets-name">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="32" height="32"
+                                            src="https://mux-world.github.io/assets/img/tokens/USDC.svg">
+                                    </div>
+                                </div>
+                                <div class="label">USDC</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Price</div>
+                                <div class="item-value">$1.00</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Total Pooled</div>
+                                <div class="item-value"><span class="tooltip-element__white">$6,263,810</span>
+                                </div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Weight</div>
+                                <div class="item-value"><span class="tooltip-element__white">20.02% / 16.90%
+                                    </span></div>
+                            </div>
+                            <div class="liquidity-stats-item mb-0">
+                                <div>Margin Trading Utilization</div>
+                                <div class="item-value">63.30%</div>
+                            </div>
+                        </div>
+
+                        <div class="assets-info">
+                            <div class="bg">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="120" height="120"
+                                            src="https://mux-world.github.io/assets/img/tokens/DAI.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assets-chain">
+                                <div class="chain-name"><img src="assets/images/icon/arbitrum.dd7f8f4b.svg" alt=""><i
+                                        class="fa fa-plus"></i></div>
+                                <div class="chain-name"><img src="assets/images/icon/BSC.a81b35b6.svg" alt=""><i
+                                        class="fa fa-plus"></i></div>
+                                <div class="chain-name"><img src="assets/images/icon/optimism.27bcaf75.svg" alt=""><i
+                                        class="fa fa-plus"></i></div>
+                                <div class="chain-name"><img src="assets/images/icon/AvalancheChain.40daf77d.svg"
+                                        alt=""><i class="fa fa-plus"></i></div>
+                                <div class="chain-name"><img src="assets/images/icon/FantomChain.07b2eb9e.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="assets-name">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="32" height="32"
+                                            src="https://mux-world.github.io/assets/img/tokens/DAI.svg">
+                                    </div>
+                                </div>
+                                <div class="label">DAI</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Price</div>
+                                <div class="item-value">$1.00</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Total Pooled</div>
+                                <div class="item-value"><span class="tooltip-element__white">$2,726,098</span>
+                                </div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Weight</div>
+                                <div class="item-value"><span class="tooltip-element__white">8.71% / 2.80%
+                                    </span></div>
+                            </div>
+                            <div class="liquidity-stats-item mb-0">
+                                <div>Margin Trading Utilization</div>
+                                <div class="item-value">63.37%</div>
+                            </div>
+                        </div>
+
+                        <div class="assets-info">
+                            <div class="bg">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="120" height="120"
+                                            src="https://mux-world.github.io/assets/img/tokens/BUSD.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assets-chain">
+                                <div class="chain-name"><img src="assets/images/icon/arbitrum.dd7f8f4b.svg" alt=""><i
+                                        class="fa fa-plus"></i></div>
+                                <div class="chain-name"><img src="assets/images/icon/BSC.a81b35b6.svg" alt=""></div>
+                            </div>
+                            <div class="assets-name">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="32" height="32"
+                                            src="https://mux-world.github.io/assets/img/tokens/BUSD.svg">
+                                    </div>
+                                </div>
+                                <div class="label">BUSD</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Price</div>
+                                <div class="item-value">$1.00</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Total Pooled</div>
+                                <div class="item-value"><span class="tooltip-element__white">$512,527</span>
+                                </div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Weight</div>
+                                <div class="item-value"><span class="tooltip-element__white">1.64% / 2.20%
+                                    </span></div>
+                            </div>
+                            <div class="liquidity-stats-item mb-0">
+                                <div>Margin Trading Utilization</div>
+                                <div class="item-value">63.37%</div>
+                            </div>
+                        </div>
+
+                        <div class="assets-info">
+                            <div class="bg">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="120" height="120"
+                                            src="https://mux-world.github.io/assets/img/tokens/USDT.e.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assets-chain">
+                                <div class="chain-name"><img src="assets/images/icon/AvalancheChain.40daf77d.svg"
+                                        alt=""></div>
+                            </div>
+                            <div class="assets-name">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="32" height="32"
+                                            src="https://mux-world.github.io/assets/img/tokens/USDT.e.svg">
+                                    </div>
+                                </div>
+                                <div class="label">USDT.e</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Price</div>
+                                <div class="item-value">$1.00</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Total Pooled</div>
+                                <div class="item-value"><span class="tooltip-element__white">$2,595.0</span>
+                                </div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Weight</div>
+                                <div class="item-value"><span class="tooltip-element__white">0.01% / 0.70%
+                                    </span></div>
+                            </div>
+                            <div class="liquidity-stats-item mb-0">
+                                <div>Margin Trading Utilization</div>
+                                <div class="item-value">63.37%</div>
+                            </div>
+                        </div>
+
+                        <div class="assets-info">
+                            <div class="bg">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="120" height="120"
+                                            src="https://mux-world.github.io/assets/img/tokens/fUSDT.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assets-chain">
+                                <div class="chain-name"><img src="assets/images/icon/FantomChain.07b2eb9e.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="assets-name">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="32" height="32"
+                                            src="https://mux-world.github.io/assets/img/tokens/fUSDT.svg">
+                                    </div>
+                                </div>
+                                <div class="label">fUSDT</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Price</div>
+                                <div class="item-value">$1.00</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Total Pooled</div>
+                                <div class="item-value"><span class="tooltip-element__white">$5,631.5</span>
+                                </div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Weight</div>
+                                <div class="item-value"><span class="tooltip-element__white">0.02% / 0.70%
+                                    </span></div>
+                            </div>
+                            <div class="liquidity-stats-item mb-0">
+                                <div>Margin Trading Utilization</div>
+                                <div class="item-value">63.37%</div>
+                            </div>
+                        </div>
+
+                        <div class="assets-info">
+                            <div class="bg">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="120" height="120"
+                                            src="https://mux-world.github.io/assets/img/tokens/BUSD.e.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assets-chain">
+                                <div class="chain-name"><img src="assets/images/icon/AvalancheChain.40daf77d.svg"
+                                        alt=""></div>
+                            </div>
+                            <div class="assets-name">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="32" height="32"
+                                            src="https://mux-world.github.io/assets/img/tokens/BUSD.e.svg">
+                                    </div>
+                                </div>
+                                <div class="label">BUSD.e</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Price</div>
+                                <div class="item-value">$1.00</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Total Pooled</div>
+                                <div class="item-value"><span class="tooltip-element__white">$19.76</span>
+                                </div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Weight</div>
+                                <div class="item-value"><span class="tooltip-element__white">0.00% / 0.00%
+                                    </span></div>
+                            </div>
+                            <div class="liquidity-stats-item mb-0">
+                                <div>Margin Trading Utilization</div>
+                                <div class="item-value">63.37%</div>
+                            </div>
+                        </div>
+
+                        <div class="assets-info">
+                            <div class="bg">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="120" height="120"
+                                            src="https://mux-world.github.io/assets/img/tokens/USDC.e.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assets-chain">
+                                <div class="chain-name"><img src="assets/images/icon/AvalancheChain.40daf77d.svg"
+                                        alt=""></div>
+                            </div>
+                            <div class="assets-name">
+                                <div class="liquidity-image-viewer round">
+                                    <div class="primary-image">
+                                        <img width="32" height="32"
+                                            src="https://mux-world.github.io/assets/img/tokens/USDC.e.svg">
+                                    </div>
+                                </div>
+                                <div class="label">USDC.e</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Price</div>
+                                <div class="item-value">$1.00</div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Total Pooled</div>
+                                <div class="item-value"><span class="tooltip-element__white">$24,946</span>
+                                </div>
+                            </div>
+                            <div class="liquidity-stats-item">
+                                <div>Weight</div>
+                                <div class="item-value"><span class="tooltip-element__white">0.08% / 0.00%
+                                    </span></div>
+                            </div>
+                            <div class="liquidity-stats-item mb-0">
+                                <div>Margin Trading Utilization</div>
+                                <div class="item-value">63.37%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- page wrapper end -->
+
+    <div class="modal-group">
+        <!--modal start-->
+        <div class="wallet-modal">
+            <div class="wallet-overlay"></div>
+
+            <div class="wallet-wrapper">
+                <div>
+                    <div class="wallet-modal-header">
+                        <div class="text-uppercase text-white">Connect Wallet</div>
+                        <i class="fa fa-arrow-alt-circle-left wallet-modal-close"></i>
+                    </div>
+                    <div class="wallet-modal-body">
+                        <div>
+                            <button class="bg-transparent">
+                                <img src="assets/images/icon/ic-browser-wallet.png" alt="Browser Wallets">Browser
+                                Wallets</button>
+                        </div>
+                        <div>
+                            <button class="bg-transparent">
+                                <img src="assets/images/icon/ic-wallet-connect.png" alt="Wallet Connect">Wallet
+                                Connect</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--modal end-->
+    </div>
+
+    <!-- node status bar start -->
+    <div class="node-status-viewer">
+        <div class="d-flex align-items-center">
+            <span class="status"></span>
+            <span class="label">
+                <a class="block" target="_blank" href="#">84077392</a>
+            </span>
+        </div>
+    </div>
+    <!-- node status bar end -->
+
+    <!--jquery-3.6.0 minified source-->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <!--bootstrap 5 minified bundle js source-->
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <!--jquery waypoints minified source-->
+    <script src="assets/js/vendor/jquery.waypoints.min.js"></script>
+    <!--magnific popup-1.1.0 minified source-->
+    <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+    <!--magnific popup-1.1.0 minified source-->
+    <script src="assets/js/vendor/jquery.counterup.min.js"></script>
+    <!--jquery nice select minified source-->
+    <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
+    <!--apexs chart minified js source-->
+    <script src="assets/js/vendor/apexcharts.min.js"></script>
+    <!--apex chart customization js source-->
+    <script src="assets/js/vendor/apex-customization.js"></script>
+
+    <!--custom js source-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

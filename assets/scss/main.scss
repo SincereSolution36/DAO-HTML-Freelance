@@ -1,0 +1,27 @@
+/*===================main scss sources start================*/
+
+//abstracts
+@import "./config/variables";
+@import "./config/mixins";
+
+//base
+@import "./base/base";
+@import "./base/typography";
+
+//components
+@import "./components/header";
+@import "./components/footer";
+@import "./components/button";
+@import "./components/modal";
+@import "./components/preloader";
+@import "./components/status-bar";
+@import "./components/tab";
+//layout
+
+// page styles
+@import "./pages/account";
+@import "./pages/default";
+@import "./pages/stake";
+@import "./pages/leaderboard";
+
+/*===================main scss sources end================*/

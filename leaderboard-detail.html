@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--required meta-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--title for this document-->
+    <title>Trade &mdash; Invest &amp; Pool</title>
+    <!--favicon for this document-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!--keywords for this  document-->
+    <meta name="keywords" content="Trade, Invest, Pool HTML Template">
+    <!--description for this document-->
+    <meta name="description" content="Trade Invest Pool HTML Template">
+    <!--author of this document-->
+    <meta name="author" content="Vlad">
+
+    <!--bootstrap 5 minified css source-->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <!--font awesome 5 minified css source-->
+    <link rel="stylesheet" href="assets/fonts/font_awesome/css/all.min.css">
+    <!--magnific popup-1.1.0 css source-->
+    <link rel="stylesheet" href="assets/css/vendor/magnific-popup.css">
+    <!--jquery nice select css source-->
+    <link rel="stylesheet" href="assets/css/vendor/nice-select.css">
+    <!--animate css source-->
+    <link rel="stylesheet" href="assets/css/vendor/animate.css">
+    <!--custom css source-->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="cs account-page leaderboard-page">
+    <!-- ===preloader start=== -->
+    <div class="loader_wrapper" id="preloader">
+        <div class="loader">
+            <div class="face">
+                <div class="circle"></div>
+            </div>
+            <div class="face">
+                <div class="circle sd"></div>
+            </div>
+            <div class="percent">
+                <span class="counterr">100</span><span class="per">%</span>
+            </div>
+        </div>
+    </div>
+    <!-- ===preloader end=== -->
+
+    <!-- page wrapper start -->
+    <div class="page-wrapper">
+        <header>
+            <div class="toggle-sidebar d-lg-none">
+                <img src="assets/images/header/ic-bar.svg" alt="toggle bar icon">
+            </div>
+
+            <a href="#" class="ms-1 d-lg-none">
+                <img src="assets/images/tidelogo.svg" alt="logo" class="logo" style="visibility: visible;">
+            </a>
+
+            <ul class="header-left menu">
+                <li>
+                    <a href="#">
+                        <img src="assets/images/tidelogo.svg" alt="logo" class="logo">
+                    </a>
+                    <div class="close ms-auto">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                </li>
+                <div>
+                    <li><a href="#">Liquidity</a>
+                    </li>
+                </div>
+                <div>
+                    <li><a href="stake.html">Stake</a>
+                    </li>
+                </div>
+                <div>
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+                </div>
+            </ul>
+
+            <ul class="header-right menu">
+                <div>
+                    <li>
+                        <div class="text-uppercase text-nowrap d-flex align-items-center" style="cursor: default;">BNB
+                            chain[test]<i class="fas fa-angle-down wallet-modal-close"></i>
+                        </div>
+                    </li>
+                </div>
+
+                <div>
+                    <li class="me-0 wallet-modal-toggler">
+                        <div class="text-uppercase text-nowrap d-flex">Connect
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </header>
+
+        <main>
+            <div class="container text-white">
+                <div class="account-detail">
+                    <div class="account-header">
+                        <a href="leaderboard.html" class="d-flex align-items-center">
+                            <i class="fa fa-arrow-left"></i>
+                        </a>
+                        <span class="mc-avatar d-flex align-items-center">
+                            <svg x="0" y="0" width="30" height="30">
+                                <rect x="0" y="0" width="30" height="30"
+                                    transform="translate(0.7236915190249161 -2.377597830639354) rotate(379.3 15 15)"
+                                    fill="#FB1845"></rect>
+                                <rect x="0" y="0" width="30" height="30"
+                                    transform="translate(-11.161547699078444 13.114803463594585) rotate(300.1 15 15)"
+                                    fill="#F5E000"></rect>
+                                <rect x="0" y="0" width="30" height="30"
+                                    transform="translate(-7.527905245480281 -25.64426993494066) rotate(260.3 15 15)"
+                                    fill="#F2BA02"></rect>
+                            </svg>
+                        </span><span>0xe8c1...39bd</span>
+                        <div class="margin-left-box ms-2"><span class="mux-copy"><i class="fa fa-copy"
+                                    style="font-size: 1.6rem;"></i></span></div>
+                    </div>
+
+                    <div class="mt-4 d-flex w-100 justify-content-between liquidity-manage-container">
+                        <div class="info-box p-relative mb-3 mb-lg-0">
+                            <div class="info">
+                                <div class="value"><span>$4,753,050</span></div>
+                                <div class="label">Total Volume</div>
+                                <div class="bg-1"></div>
+                                <div class="bg-2"></div>
+                            </div>
+
+                            <div class="account-info">
+                                <div class="liquidity-stats-item">
+                                    <div class="item-title">
+                                        <span class="tooltip-element__text-color">Average Leverage</span>
+                                    </div>
+                                    <div class="item-value">25.3x</div>
+                                </div>
+
+                                <div class="liquidity-stats-item">
+                                    <div class="item-title">
+                                        <span>Long Volume</span>
+                                    </div>
+                                    <div class="item-value">$0</div>
+                                </div>
+
+                                <div class="liquidity-stats-item">
+                                    <div class="item-title">
+                                        <span>Short Volume</span>
+                                    </div>
+                                    <div class="item-value">$4,753,050</div>
+                                </div>
+
+                                <div class="liquidity-stats-item mb-0">
+                                    <div class="item-title">
+                                        <span>Liquidation Volume</span>
+                                    </div>
+                                    <div class="item-value">$0</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-box p-relative">
+                            <div class="info">
+                                <div class="value text-danger"><span>- $4,320.3</span></div>
+                                <div class="label">Total PNL With Fees</div>
+                                <div class="bg-1"></div>
+                                <div class="bg-2"></div>
+                            </div>
+
+                            <div class="account-info">
+                                <div class="liquidity-stats-item">
+                                    <div class="item-title">
+                                        <span class="tooltip-element__text-color">Win / Loss</span>
+                                    </div>
+                                    <div class="item-value">0 / 0</div>
+                                </div>
+
+                                <div class="liquidity-stats-item">
+                                    <div class="item-title">
+                                        <span>Total PNL</span>
+                                    </div>
+                                    <div class="item-value">$0</div>
+                                </div>
+
+                                <div class="liquidity-stats-item">
+                                    <div class="item-title">
+                                        <span>STotal Fees Paid</span>
+                                    </div>
+                                    <div class="item-value">$4,320.3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="mt-4 pt-4">Active Positions</h3>
+
+                    <table class="sortable positions-table mt-4">
+                        <thead class="table-head">
+                            <tr>
+                                <th class="table-cell">Market</th>
+                                <th class="table-cell">Size</th>
+                                <th class="table-cell">Net Value</th>
+                                <th class="table-cell">Collateral</th>
+                                <th class="table-cell">Entry Price</th>
+                                <th class="table-cell">Liq. Price</th>
+                                <th class="table-cell flex-grow-1">PNL & ROE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="data-item">
+                                <a href="leadership-detail.html">
+                                    <td class="table-cell">
+                                        <div class="chain-tag"><img src="assets/images/icon/arbitrum.dd7f8f4b.svg"
+                                                alt=""></div>
+                                        <span class="mc-avatar">
+                                            <img src="https://mux-world.github.io/assets/img/tokens/ETH.svg" alt=""
+                                                width="24" height="24" class="me-1">
+                                        </span>
+                                        <div>
+                                            <div class="market-name">ETH</div>
+                                            <div class="side orange-color">
+                                                <span>Short</span><span>&nbsp;22.0X</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="table-cell">
+                                        <div>
+                                            <div>2,612.1655 ETH</div>
+                                            <div class="label">$4,879,003</div>
+                                        </div>
+                                    </td>
+                                    <td class="table-cell">$89,727</td>
+                                    <td class="table-cell">
+                                        <div>
+                                            <div>
+                                                215,679.7 USDC</div>
+                                            <div class="label">$215,680</div>
+                                        </div>
+                                    </td>
+                                    <td class="table-cell">$1,819.6</td>
+                                    <td class="table-cell">$1,892.7</td>
+                                    <td class="table-cell">
+                                        <div class="table-cell">
+                                            <div>
+                                                <span class="pn-number negative">-$125,953</span>
+                                            </div>
+                                            <div class="label"><span class="pn-number">-
+                                                    58.40%</span></div>
+                                        </div>
+                                    </td>
+                                </a>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3 class="mt-4 pt-4">Trades</h3>
+
+                    <div class="pc-tab">
+                        <input class="d-none" checked="checked" id="tab3" type="radio" name="pct1" />
+                        <input class="d-none" id="tab4" type="radio" name="pct1" />
+                        <input class="d-none" id="tab5" type="radio" name="pct1" />
+                        <nav class="dialog-container">
+                            <ul class="radio-container">
+                                <div class="radio-button-group ms-0">
+                                    <li class="tab3 radio-item blue w-50">
+                                        <label for="tab3" class="w-100">24 Hours</label>
+                                    </li>
+                                    <li class="tab4 radio-item orange w-50">
+                                        <label for="tab4" class="w-100">7 Days</label>
+                                    </li>
+                                    <li class="tab5 radio-item orange w-50">
+                                        <label for="tab5" class="w-100">1 Month</label>
+                                    </li>
+                                </div>
+                            </ul>
+                        </nav>
+
+                        <section>
+                            <div class="tab3">
+                                <div class="trades-table">
+                                    <div class="trade-info">
+                                        <div class="info-item">
+                                            <div class="label">24H Volume:</div>
+                                            <div class="value"><span>$4,753,050</span></div>
+                                        </div>
+                                        <div class="info-item">
+                                            <div class="label"><span class="tooltip-element__white">24H PNL:</span>
+                                            </div>
+                                            <div class="value"><span class="pn-number">$0</span></div>
+                                        </div>
+                                        <div class="info-item">
+                                            <div class="label">24H Fees:</div>
+                                            <div class="value"><span><span class="tooltip-element__white">
+                                                        $4,320.3</span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="table-head">
+                                        <div class="table-cell">Time</div>
+                                        <div class="table-cell">Market</div>
+                                        <div class="table-cell">Operation</div>
+                                        <div class="table-cell">Price</div>
+                                        <div class="table-cell">Amount</div>
+                                        <div class="table-cell">Fees &amp; Funding</div>
+                                        <div class="table-cell"><span class="tooltip-element__text-color">PNL</span>
+                                        </div>
+                                    </div>
+                                    <div class="table-body">
+                                        <div class="data-item">
+                                            <div class="table-cell">
+                                                <div>21:11:40</div>
+                                                <div class="label">04/25/2023</div>
+                                            </div>
+                                            <div class="table-cell market">
+                                                <div class="image-viewer round" style="height: 24px; width: 24px;">
+                                                    <div class="primary-image n-image n-image--preview-disabled"
+                                                        role="none"><img width="24" height="24"
+                                                            src="https://mux-world.github.io/assets/img/tokens/ETH.svg"
+                                                            loading="eager" data-error="false"
+                                                            data-preview-src="https://mux-world.github.io/assets/img/tokens/ETH.svg"
+                                                            data-group-id="" style="object-fit: fill;">
+                                                    </div>
+                                                </div> ETH
+                                            </div>
+                                            <div class="table-cell"><span>Open</span><span>&nbsp;Short</span>
+                                                <div class="label">41.1x</div>
+                                            </div>
+                                            <div class="table-cell">$1,825.1</div>
+                                            <div class="table-cell">
+                                                <div>974.2517 ETH</div>
+                                                <div class="label">$1,778,107</div>
+                                            </div>
+                                            <div class="table-cell">$1,940.3</div>
+                                            <div class="table-cell"><span class="no-pnl"> -- </span></div>
+                                        </div>
+                                        <div class="data-item">
+                                            <div class="table-cell">
+                                                <div>16:58:49</div>
+                                                <div class="label">04/25/2023</div>
+                                            </div>
+                                            <div class="table-cell market">
+                                                <div class="image-viewer round" style="height: 24px; width: 24px;">
+                                                    <div class="primary-image n-image n-image--preview-disabled"
+                                                        role="none"><img width="24" height="24"
+                                                            src="https://mux-world.github.io/assets/img/tokens/ETH.svg"
+                                                            loading="eager" data-error="false"
+                                                            data-preview-src="https://mux-world.github.io/assets/img/tokens/ETH.svg"
+                                                            data-group-id="" style="object-fit: fill;">
+                                                    </div>
+                                                </div> ETH
+                                            </div>
+                                            <div class="table-cell"><span>Open</span><span>&nbsp;Short</span>
+                                                <div class="label">44.0x</div>
+                                            </div>
+                                            <div class="table-cell">$1,816.3</div>
+                                            <div class="table-cell">
+                                                <div>1,637.9138 ETH</div>
+                                                <div class="label">$2,974,943</div>
+                                            </div>
+                                            <div class="table-cell">$2,380.0</div>
+                                            <div class="table-cell"><span class="no-pnl"> -- </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab4">
+                                <div class="trades-table">
+                                    <div class="trade-info">
+                                        <div class="info-item">
+                                            <div class="label">24H Volume:</div>
+                                            <div class="value"><span>$4,753,050</span></div>
+                                        </div>
+                                        <div class="info-item">
+                                            <div class="label"><span class="tooltip-element__white">24H PNL:</span>
+                                            </div>
+                                            <div class="value"><span class="pn-number">$0</span></div>
+                                        </div>
+                                        <div class="info-item">
+                                            <div class="label">24H Fees:</div>
+                                            <div class="value"><span><span class="tooltip-element__white">
+                                                        $4,320.3</span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="table-head">
+                                        <div class="table-cell">Time</div>
+                                        <div class="table-cell">Market</div>
+                                        <div class="table-cell">Operation</div>
+                                        <div class="table-cell">Price</div>
+                                        <div class="table-cell">Amount</div>
+                                        <div class="table-cell">Fees &amp; Funding</div>
+                                        <div class="table-cell"><span class="tooltip-element__text-color">PNL</span>
+                                        </div>
+                                    </div>
+                                    <div class="table-body">
+                                        <div class="data-item">
+                                            <div class="table-cell">
+                                                <div>16:58:49</div>
+                                                <div class="label">04/25/2023</div>
+                                            </div>
+                                            <div class="table-cell market">
+                                                <div class="image-viewer round" style="height: 24px; width: 24px;">
+                                                    <div class="primary-image n-image n-image--preview-disabled"
+                                                        role="none"><img width="24" height="24"
+                                                            src="https://mux-world.github.io/assets/img/tokens/ETH.svg"
+                                                            loading="eager" data-error="false"
+                                                            data-preview-src="https://mux-world.github.io/assets/img/tokens/ETH.svg"
+                                                            data-group-id="" style="object-fit: fill;">
+                                                    </div>
+                                                </div> ETH
+                                            </div>
+                                            <div class="table-cell"><span>Open</span><span>&nbsp;Short</span>
+                                                <div class="label">44.0x</div>
+                                            </div>
+                                            <div class="table-cell">$1,816.3</div>
+                                            <div class="table-cell">
+                                                <div>1,637.9138 ETH</div>
+                                                <div class="label">$2,974,943</div>
+                                            </div>
+                                            <div class="table-cell">$2,380.0</div>
+                                            <div class="table-cell"><span class="no-pnl"> -- </span></div>
+                                        </div>
+                                        <div class="data-item">
+                                            <div class="table-cell">
+                                                <div>21:11:40</div>
+                                                <div class="label">04/25/2023</div>
+                                            </div>
+                                            <div class="table-cell market">
+                                                <div class="image-viewer round" style="height: 24px; width: 24px;">
+                                                    <div class="primary-image n-image n-image--preview-disabled"
+                                                        role="none"><img width="24" height="24"
+                                                            src="https://mux-world.github.io/assets/img/tokens/ETH.svg"
+                                                            loading="eager" data-error="false"
+                                                            data-preview-src="https://mux-world.github.io/assets/img/tokens/ETH.svg"
+                                                            data-group-id="" style="object-fit: fill;">
+                                                    </div>
+                                                </div> ETH
+                                            </div>
+                                            <div class="table-cell"><span>Open</span><span>&nbsp;Short</span>
+                                                <div class="label">41.1x</div>
+                                            </div>
+                                            <div class="table-cell">$1,825.1</div>
+                                            <div class="table-cell">
+                                                <div>974.2517 ETH</div>
+                                                <div class="label">$1,778,107</div>
+                                            </div>
+                                            <div class="table-cell">$1,940.3</div>
+                                            <div class="table-cell"><span class="no-pnl"> -- </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab5">
+                                <div class="trades-table">
+                                    <div class="trade-info">
+                                        <div class="info-item">
+                                            <div class="label">24H Volume:</div>
+                                            <div class="value"><span>$4,753,050</span></div>
+                                        </div>
+                                        <div class="info-item">
+                                            <div class="label"><span class="tooltip-element__white">24H PNL:</span>
+                                            </div>
+                                            <div class="value"><span class="pn-number">$0</span></div>
+                                        </div>
+                                        <div class="info-item">
+                                            <div class="label">24H Fees:</div>
+                                            <div class="value"><span><span class="tooltip-element__white">
+                                                        $4,320.3</span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="table-head">
+                                        <div class="table-cell">Time</div>
+                                        <div class="table-cell">Market</div>
+                                        <div class="table-cell">Operation</div>
+                                        <div class="table-cell">Price</div>
+                                        <div class="table-cell">Amount</div>
+                                        <div class="table-cell">Fees &amp; Funding</div>
+                                        <div class="table-cell"><span class="tooltip-element__text-color">PNL</span>
+                                        </div>
+                                    </div>
+                                    <div class="table-body">
+                                        <div class="data-item">
+                                            <div class="table-cell">
+                                                <div>21:11:40</div>
+                                                <div class="label">04/25/2023</div>
+                                            </div>
+                                            <div class="table-cell market">
+                                                <div class="image-viewer round" style="height: 24px; width: 24px;">
+                                                    <div class="primary-image n-image n-image--preview-disabled"
+                                                        role="none"><img width="24" height="24"
+                                                            src="https://mux-world.github.io/assets/img/tokens/ETH.svg"
+                                                            loading="eager" data-error="false"
+                                                            data-preview-src="https://mux-world.github.io/assets/img/tokens/ETH.svg"
+                                                            data-group-id="" style="object-fit: fill;">
+                                                    </div>
+                                                </div> ETH
+                                            </div>
+                                            <div class="table-cell"><span>Open</span><span>&nbsp;Short</span>
+                                                <div class="label">41.1x</div>
+                                            </div>
+                                            <div class="table-cell">$1,825.1</div>
+                                            <div class="table-cell">
+                                                <div>974.2517 ETH</div>
+                                                <div class="label">$1,778,107</div>
+                                            </div>
+                                            <div class="table-cell">$1,940.3</div>
+                                            <div class="table-cell"><span class="no-pnl"> -- </span></div>
+                                        </div>
+                                        <div class="data-item">
+                                            <div class="table-cell">
+                                                <div>16:58:49</div>
+                                                <div class="label">04/25/2023</div>
+                                            </div>
+                                            <div class="table-cell market">
+                                                <div class="image-viewer round" style="height: 24px; width: 24px;">
+                                                    <div class="primary-image n-image n-image--preview-disabled"
+                                                        role="none"><img width="24" height="24"
+                                                            src="https://mux-world.github.io/assets/img/tokens/ETH.svg"
+                                                            loading="eager" data-error="false"
+                                                            data-preview-src="https://mux-world.github.io/assets/img/tokens/ETH.svg"
+                                                            data-group-id="" style="object-fit: fill;">
+                                                    </div>
+                                                </div> ETH
+                                            </div>
+                                            <div class="table-cell"><span>Open</span><span>&nbsp;Short</span>
+                                                <div class="label">44.0x</div>
+                                            </div>
+                                            <div class="table-cell">$1,816.3</div>
+                                            <div class="table-cell">
+                                                <div>1,637.9138 ETH</div>
+                                                <div class="label">$2,974,943</div>
+                                            </div>
+                                            <div class="table-cell">$2,380.0</div>
+                                            <div class="table-cell"><span class="no-pnl"> -- </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- page wrapper end -->
+
+    <div class="modal-group">
+        <!--modal start-->
+        <div class="wallet-modal">
+            <div class="wallet-overlay"></div>
+
+            <div class="wallet-wrapper">
+                <div>
+                    <div class="wallet-modal-header">
+                        <div class="text-uppercase text-white">Connect Wallet</div>
+                        <i class="fa fa-arrow-alt-circle-left wallet-modal-close"></i>
+                    </div>
+                    <div class="wallet-modal-body">
+                        <div>
+                            <button class="bg-transparent">
+                                <img src="assets/images/icon/ic-browser-wallet.png" alt="Browser Wallets">Browser
+                                Wallets</button>
+                        </div>
+                        <div>
+                            <button class="bg-transparent">
+                                <img src="assets/images/icon/ic-wallet-connect.png" alt="Wallet Connect">Wallet
+                                Connect</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--modal end-->
+    </div>
+
+    <!-- node status bar start -->
+    <div class="node-status-viewer">
+        <div class="d-flex align-items-center">
+            <span class="status"></span>
+            <span class="label">
+                <a class="block" target="_blank" href="#">84077392</a>
+            </span>
+        </div>
+    </div>
+    <!-- node status bar end -->
+
+    <!--jquery-3.6.0 minified source-->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <!--bootstrap 5 minified bundle js source-->
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <!--jquery waypoints minified source-->
+    <script src="assets/js/vendor/jquery.waypoints.min.js"></script>
+    <!--magnific popup-1.1.0 minified source-->
+    <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+    <!--magnific popup-1.1.0 minified source-->
+    <script src="assets/js/vendor/jquery.counterup.min.js"></script>
+    <!--jquery nice select minified source-->
+    <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
+    <!--apexs chart minified js source-->
+    <script src="assets/js/vendor/apexcharts.min.js"></script>
+    <!--apex chart customization js source-->
+    <script src="assets/js/vendor/apex-customization.js"></script>
+
+    <!--custom js source-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

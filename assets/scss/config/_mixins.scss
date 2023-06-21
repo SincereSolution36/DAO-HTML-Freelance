@@ -1,0 +1,59 @@
+/*====mixins start====*/
+
+//mixin for box-sizing property
+@mixin box-sizing {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+//mixin for css border radius property
+@mixin border-radius($value) {
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    -ms-border-radius: $value;
+    border-radius: $value;
+}
+
+//mixin for css transform property
+@mixin transform ($value) {
+    -webkit-transform: $value;
+    -ms-transform: $value;
+    transform: $value;
+}
+
+//mixin for css transition property
+@mixin transition ($value) {
+    -webkit-transition: $value;
+    -o-transition: $value;
+    transition: $value;
+}
+
+//mixin for box shadow
+@mixin box-shadow ($value) {
+    -webkit-box-shadow: $value;
+    box-shadow: $value;
+}
+
+//background image gradient
+@mixin gradient {
+    background-image: -moz-linear-gradient(135deg, rgb(245, 49, 127) 0%, rgb(255, 124, 110) 100%);
+    background-image: -webkit-linear-gradient(135deg, rgb(245, 49, 127) 0%, rgb(255, 124, 110) 100%);
+    background-image: -ms-linear-gradient(135deg, rgb(245, 49, 127) 0%, rgb(255, 124, 110) 100%);
+    background-image: linear-gradient(135deg, rgb(245, 49, 127) 0%, rgb(255, 124, 110) 100%);
+}
+
+/*====mixins for maximum custom viewport====*/
+@mixin min-screen($value) {
+    @media only screen and (min-width: $value) {
+        @content;
+    }
+}
+
+/*====mixins for maximum custom viewport====*/
+@mixin max-screen($value) {
+    @media only screen and (max-width: $value) {
+        @content;
+    }
+}
+
+/*====mixins end====*/

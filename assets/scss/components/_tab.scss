@@ -1,0 +1,100 @@
+/* Component Needs */
+
+.pc-tab>input,
+.pc-tab section>div {
+    display: none;
+}
+
+#tab1:checked~section .tab1,
+#tab2:checked~section .tab2,
+#tab3:checked~section .tab3,
+#tab4:checked~section .tab4,
+#tab5:checked~section .tab5 {
+    display: block;
+}
+
+#tab1:checked~nav .tab1,
+#tab2:checked~nav .tab2 {
+    label {
+        color: var(--primary-blue);
+        background-color: rgba(0, 216, 226, 0.1);
+        border: 1px solid rgba(0, 216, 226, 0.2);
+        height: 44px;
+        line-height: 44px;
+        font-size: 16px;
+        font-weight: 500;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 12px;
+        text-align: center;
+    }
+}
+
+#tab3:checked~nav .tab3,
+#tab4:checked~nav .tab4,
+#tab5:checked~nav .tab5 {
+    label {
+        color: var(--white-color);
+        background: var(--bg-normal);
+        border: 1px solid rgba(0, 216, 226, 0.2);
+        height: 44px;
+        line-height: 44px;
+        font-size: 16px;
+        font-weight: 500;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 12px;
+        text-align: center;
+    }
+}
+
+.tab1 .radio-button-group {
+    background-color: transparent;
+}
+
+/* Visual Styles */
+.pc-tab {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            width: 50%;
+
+            &:not(:last-child) label {
+                border-right-width: 0;
+            }
+        }
+    }
+
+    label {
+        transition: color .3s;
+
+        &:hover {
+            color: var(--warning-color);
+        }
+    }
+}
+
+@include max-screen(991px) {
+    .pc-tab section {
+        overflow-x: scroll;
+    }
+
+    .tab1,
+    .tab2,
+    .tab3,
+    .tab4,
+    .tab5 {
+        width: 800px;
+    }
+
+    body.leaderboard-page:not(.account-page) .tab1 {
+        width: auto;
+    }
+}
